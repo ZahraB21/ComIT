@@ -1,0 +1,49 @@
+body{
+    font-family: 'Cabin', sans-serif;
+}
+
+.container-fluid{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    .navbar{
+        height: 80px;
+        
+        .navbar-brand{
+            color: white;
+            font-size: xx-large;
+        }
+    
+        span{
+            font-weight: bold;
+        }
+        
+        li>.nav-link{
+            color: white;
+            text-transform: uppercase;
+        }
+    }
+
+    #header_div_2{
+        min-width: 100vw;
+        width: auto;
+        
+        h1{
+            text-transform: uppercase;
+            // position: fixed;
+            // left: 5%;
+            // text-transform: uppercase;
+            // bottom: 0;
+            // background: rgba(0, 0, 0, 0.5);
+            // color: #f1f1f1;
+            // width: 90%;
+            // margin: 0 auto;
+            // text-align: center;
+            // padding: 20px;
+        }
+    }
+
+}
+

@@ -1,0 +1,32 @@
+body {
+  font-family: 'Cabin', sans-serif;
+}
+
+.container-fluid {
+  padding: 0;
+  margin: 0;
+}
+
+header .navbar {
+  height: 80px;
+}
+
+header .navbar .navbar-brand {
+  color: white;
+  font-size: xx-large;
+}
+
+header .navbar span {
+  font-weight: bold;
+}
+
+header .navbar li > .nav-link {
+  color: white;
+  text-transform: uppercase;
+}
+
+header #header_div_2 {
+  min-width: 100vw;
+  width: auto;
+}
+/*# sourceMappingURL=h_styles.css.map */
