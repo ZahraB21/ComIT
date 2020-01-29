@@ -1,1 +1,1 @@
-# LIT
+# ComIt
