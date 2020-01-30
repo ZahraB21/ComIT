@@ -1,9 +1,12 @@
 // Shared
+$primaryColor: #23272b;
 $secondColor : #af6c1e;
+$darkColor: #061646ee;
 
 // Basic
 body{
     font-family: 'Cabin', sans-serif;
+    color: white;
 }
 
 .container-fluid{
@@ -15,10 +18,16 @@ body{
 header{
     .navbar{
         height: 80px;
+        background-color: $primaryColor;
         
         .navbar-brand{
             color: white;
             font-size: xx-large;
+            padding: 3px 10px;
+            border-radius: 0.3em;
+            background-color: $darkColor;
+            box-shadow: 2px 3px 2px white;
+            margin-bottom: 2.5px;
         }
     
         .active{
@@ -40,14 +49,25 @@ header{
     }
 
     #header_div_2{
-        min-width: 100vw;
+        padding: 0;
+        min-width: 99.87vw;
         min-height: 100vh;
-        width: 100vw;
+        width: 99.87vw;
         height: 100vh;
+        
         background-image: url(/images/homePage.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         
+        #header_column{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+        }
+
         h1{
             padding: 1.5% 3%;
             text-transform: uppercase;
@@ -60,7 +80,7 @@ header{
 
         #time{
             width: 50%;
-            margin: 7% auto 1% auto;
+            margin: -10% auto 1% auto;
         }
 
         #recode {
@@ -82,13 +102,13 @@ header{
             
             #left{
                 animation: slide-left 4.179s ease-in infinite;
-                bottom: 59.5vh;
+                bottom: 48.5vh;
                 left: 31vw;
             }
 
             #right{
                 animation: slide-right 4.179s ease-in infinite;
-                bottom: 59.5vh;
+                bottom: 48.5vh;
                 right: 29vw;
             }
         }
@@ -106,10 +126,108 @@ header{
                 margin-left: auto;
                 margin-right: auto;
                 padding: 12.5px 0;
-                border-bottom: 7px double #af6c1e;
+                background-color: $darkColor;
+                // border-bottom: 7px double #af6c1e;
+
             }
         }
     }
+}
+
+main{
+    
+    h1{
+        text-transform: uppercase;
+        width: 30%;
+        margin: 20px auto;
+        font-size: 2.5em;
+
+        span{
+            text-transform: uppercase;
+            padding: 7px 0 7px 10px;
+            color: $secondColor;
+            border-radius: 0.3em;
+            font-weight: bold;
+            font-size: 1.1em;
+            //text-shadow: 2px 1px 3px white;
+        }
+    }
+
+    #what_we_do{
+        padding-top: 40px;
+        background: $primaryColor;
+        margin-bottom: 30px;
+        
+        
+        #description{
+            
+            p{
+                color: rgba(236, 232, 232, 0.986);
+                width: 80%;
+                margin: 10px auto 120px auto;
+                text-align: justify;
+                font-size: 1.2em;
+                line-height: 1.5em;
+                padding: 30px 80px;
+                border-left: 15px double rgb(228, 226, 226);
+                border-right: 15px double rgb(228, 226, 226);
+            }
+        }
+    }
+
+    #our_numbers{
+
+        margin-top: 50px;
+
+        .row{
+            width: 100%;
+            margin: 20px auto;
+            padding: 0;
+            text-align: center;
+        }
+        
+        h1{
+            color: #061646ee;
+            margin-bottom: 50px;
+        }
+
+        #number_columns{
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cols{
+            width: 80%;
+            margin: 0 auto;
+            
+            h3{
+                width: 55%;
+                text-align: center;
+                padding: 35px 15px;
+                margin: 5px auto 0 auto;
+                border: 3px solid $secondColor;
+                border-radius: 50%;
+                color: white;
+                background-color: $darkColor;  
+                z-index: 1; 
+            }
+    
+            p{
+                width: 90%;
+                color: black;
+                margin: -30px auto 0px auto;
+                padding: 45px 25px 25px 25px ;
+                border-top: 1px solid rgba(46, 44, 44, 0.6);
+                border-left: 8px double $darkColor;
+                border-right: 8px double $darkColor;
+                border-bottom: 8px double $darkColor;
+                z-index: -1;
+            }
+        }
+
+    }
+
 }
 
 
@@ -118,9 +236,10 @@ header{
 @keyframes slide-left{
     from {
         transform:scaleX(0);
+
     }
     to{
-        transform: scaleX(1);
+        transform: scaleX(1.17);
         color: #003bee;
     }
 }
@@ -128,9 +247,9 @@ header{
 @keyframes slide-right{
     from {
         transform:scaleX(0);
-    }
+    } 
     to{
-        transform: scaleX(1);
+        transform: scaleX(1.17);
         color: #003bee;
     }
 }

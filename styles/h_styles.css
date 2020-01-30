@@ -1,5 +1,6 @@
 body {
   font-family: 'Cabin', sans-serif;
+  color: white;
 }
 
 .container-fluid {
@@ -9,11 +10,18 @@ body {
 
 header .navbar {
   height: 80px;
+  background-color: #23272b;
 }
 
 header .navbar .navbar-brand {
   color: white;
   font-size: xx-large;
+  padding: 3px 10px;
+  border-radius: 0.3em;
+  background-color: #061646ee;
+  -webkit-box-shadow: 2px 3px 2px white;
+          box-shadow: 2px 3px 2px white;
+  margin-bottom: 2.5px;
 }
 
 header .navbar .active {
@@ -34,13 +42,32 @@ header .navbar li > .nav-link {
 }
 
 header #header_div_2 {
-  min-width: 100vw;
+  padding: 0;
+  min-width: 99.87vw;
   min-height: 100vh;
-  width: 100vw;
+  width: 99.87vw;
   height: 100vh;
   background-image: url(/images/homePage.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+header #header_div_2 #header_column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
 header #header_div_2 h1 {
@@ -55,7 +82,7 @@ header #header_div_2 h1 {
 
 header #header_div_2 #time {
   width: 50%;
-  margin: 7% auto 1% auto;
+  margin: -10% auto 1% auto;
 }
 
 header #header_div_2 #recode {
@@ -77,14 +104,14 @@ header #header_div_2 div #left, header #header_div_2 div #right {
 header #header_div_2 div #left {
   -webkit-animation: slide-left 4.179s ease-in infinite;
           animation: slide-left 4.179s ease-in infinite;
-  bottom: 59.5vh;
+  bottom: 48.5vh;
   left: 31vw;
 }
 
 header #header_div_2 div #right {
   -webkit-animation: slide-right 4.179s ease-in infinite;
           animation: slide-right 4.179s ease-in infinite;
-  bottom: 59.5vh;
+  bottom: 48.5vh;
   right: 29vw;
 }
 
@@ -102,7 +129,92 @@ header #header_div_2 div:nth-of-type(3) .btn {
   margin-left: auto;
   margin-right: auto;
   padding: 12.5px 0;
-  border-bottom: 7px double #af6c1e;
+  background-color: #061646ee;
+}
+
+main h1 {
+  text-transform: uppercase;
+  width: 30%;
+  margin: 20px auto;
+  font-size: 2.5em;
+}
+
+main h1 span {
+  text-transform: uppercase;
+  padding: 7px 0 7px 10px;
+  color: #af6c1e;
+  border-radius: 0.3em;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+main #what_we_do {
+  padding-top: 40px;
+  background: #23272b;
+  margin-bottom: 30px;
+}
+
+main #what_we_do #description p {
+  color: rgba(236, 232, 232, 0.986);
+  width: 80%;
+  margin: 10px auto 120px auto;
+  text-align: justify;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  padding: 30px 80px;
+  border-left: 15px double #e4e2e2;
+  border-right: 15px double #e4e2e2;
+}
+
+main #our_numbers {
+  margin-top: 50px;
+}
+
+main #our_numbers .row {
+  width: 100%;
+  margin: 20px auto;
+  padding: 0;
+  text-align: center;
+}
+
+main #our_numbers h1 {
+  color: #061646ee;
+  margin-bottom: 50px;
+}
+
+main #our_numbers #number_columns {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main #our_numbers .cols {
+  width: 80%;
+  margin: 0 auto;
+}
+
+main #our_numbers .cols h3 {
+  width: 55%;
+  text-align: center;
+  padding: 35px 15px;
+  margin: 5px auto 0 auto;
+  border: 3px solid #af6c1e;
+  border-radius: 50%;
+  color: white;
+  background-color: #061646ee;
+  z-index: 1;
+}
+
+main #our_numbers .cols p {
+  width: 90%;
+  color: black;
+  margin: -30px auto 0px auto;
+  padding: 45px 25px 25px 25px;
+  border-top: 1px solid rgba(46, 44, 44, 0.6);
+  border-left: 8px double #061646ee;
+  border-right: 8px double #061646ee;
+  border-bottom: 8px double #061646ee;
+  z-index: -1;
 }
 
 @-webkit-keyframes slide-left {
@@ -111,8 +223,8 @@ header #header_div_2 div:nth-of-type(3) .btn {
             transform: scaleX(0);
   }
   to {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
+    -webkit-transform: scaleX(1.17);
+            transform: scaleX(1.17);
     color: #003bee;
   }
 }
@@ -123,8 +235,8 @@ header #header_div_2 div:nth-of-type(3) .btn {
             transform: scaleX(0);
   }
   to {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
+    -webkit-transform: scaleX(1.17);
+            transform: scaleX(1.17);
     color: #003bee;
   }
 }
@@ -135,8 +247,8 @@ header #header_div_2 div:nth-of-type(3) .btn {
             transform: scaleX(0);
   }
   to {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
+    -webkit-transform: scaleX(1.17);
+            transform: scaleX(1.17);
     color: #003bee;
   }
 }
@@ -147,8 +259,8 @@ header #header_div_2 div:nth-of-type(3) .btn {
             transform: scaleX(0);
   }
   to {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
+    -webkit-transform: scaleX(1.17);
+            transform: scaleX(1.17);
     color: #003bee;
   }
 }
