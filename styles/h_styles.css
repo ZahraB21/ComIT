@@ -16,17 +16,166 @@ header .navbar .navbar-brand {
   font-size: xx-large;
 }
 
+header .navbar .active {
+  border-bottom: 3px dotted #af6c1e;
+}
+
 header .navbar span {
   font-weight: bold;
+  color: #af6c1e;
 }
 
 header .navbar li > .nav-link {
   color: white;
   text-transform: uppercase;
+  text-align: left;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 header #header_div_2 {
   min-width: 100vw;
-  width: auto;
+  min-height: 100vh;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(/images/homePage.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header #header_div_2 h1 {
+  padding: 1.5% 3%;
+  text-transform: uppercase;
+  color: white;
+  background: rgba(46, 44, 44, 0.86);
+  text-align: center;
+  border-left: 15px double white;
+  border-right: 15px double white;
+}
+
+header #header_div_2 #time {
+  width: 50%;
+  margin: 7% auto 1% auto;
+}
+
+header #header_div_2 #recode {
+  width: 50%;
+  margin: 0 auto 1% auto;
+  padding-right: 0;
+  -webkit-animation: change-color ease-in 4.17s infinite;
+          animation: change-color ease-in 4.17s infinite;
+}
+
+header #header_div_2 div #left, header #header_div_2 div #right {
+  color: white;
+  font-size: 6rem;
+  display: block;
+  z-index: 1;
+  position: absolute;
+}
+
+header #header_div_2 div #left {
+  -webkit-animation: slide-left 4.179s ease-in infinite;
+          animation: slide-left 4.179s ease-in infinite;
+  bottom: 59.5vh;
+  left: 31vw;
+}
+
+header #header_div_2 div #right {
+  -webkit-animation: slide-right 4.179s ease-in infinite;
+          animation: slide-right 4.179s ease-in infinite;
+  bottom: 59.5vh;
+  right: 29vw;
+}
+
+header #header_div_2 div:nth-of-type(3) {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  z-index: inherit;
+}
+
+header #header_div_2 div:nth-of-type(3) .btn {
+  text-transform: uppercase;
+  width: 25%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 12.5px 0;
+  border-bottom: 7px double #af6c1e;
+}
+
+@-webkit-keyframes slide-left {
+  from {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+  to {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    color: #003bee;
+  }
+}
+
+@keyframes slide-left {
+  from {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+  to {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    color: #003bee;
+  }
+}
+
+@-webkit-keyframes slide-right {
+  from {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+  to {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    color: #003bee;
+  }
+}
+
+@keyframes slide-right {
+  from {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+  to {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    color: #003bee;
+  }
+}
+
+@-webkit-keyframes change-color {
+  from {
+    color: white;
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+  to {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    color: #ff9a26;
+  }
+}
+
+@keyframes change-color {
+  from {
+    color: white;
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+  to {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    color: #ff9a26;
+  }
 }
 /*# sourceMappingURL=h_styles.css.map */
