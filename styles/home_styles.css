@@ -1,3 +1,11 @@
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+
 body {
   font-family: 'Cabin', sans-serif;
   color: white;
@@ -6,6 +14,10 @@ body {
 .container-fluid {
   padding: 0;
   margin: 0;
+}
+
+.row {
+  padding: 0;
 }
 
 header .navbar {
@@ -62,36 +74,28 @@ header .navbar #navbarSupportedContent .nav-link {
   padding-right: 0;
 }
 
-header #header_div_2 {
+header #header_row_2 {
+  margin: 0;
   padding: 0;
-  min-width: 99.87vw;
+}
+
+header #header_row_2 #header_div_2 {
+  padding: 0;
+  min-width: 100vw;
   min-height: 100vh;
-  width: 99.87vw;
+  width: 100vw;
   height: 100vh;
   background-image: url(/images/homePage.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-header #header_div_2 #header_column {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+header #header_row_2 #header_div_2 #header_column {
   width: 100%;
   height: 100%;
 }
 
-header #header_div_2 h1 {
+header #header_row_2 #header_div_2 h1 {
   padding: 1.5% 3%;
   text-transform: uppercase;
   color: white;
@@ -101,12 +105,12 @@ header #header_div_2 h1 {
   border-right: 15px double white;
 }
 
-header #header_div_2 #time {
+header #header_row_2 #header_div_2 #time {
   width: 50%;
   margin: -10% auto 1% auto;
 }
 
-header #header_div_2 #recode {
+header #header_row_2 #header_div_2 #recode {
   width: 50%;
   margin: 0 auto 1% auto;
   padding-right: 0;
@@ -114,7 +118,7 @@ header #header_div_2 #recode {
           animation: change-color ease-in 4.17s infinite;
 }
 
-header #header_div_2 div #left, header #header_div_2 div #right {
+header #header_row_2 #header_div_2 div #left, header #header_row_2 #header_div_2 div #right {
   color: white;
   font-size: 6rem;
   display: block;
@@ -122,28 +126,28 @@ header #header_div_2 div #left, header #header_div_2 div #right {
   position: absolute;
 }
 
-header #header_div_2 div #left {
+header #header_row_2 #header_div_2 div #left {
   -webkit-animation: slide-left 4.179s ease-in infinite;
           animation: slide-left 4.179s ease-in infinite;
   bottom: 48.5vh;
   left: 31vw;
 }
 
-header #header_div_2 div #right {
+header #header_row_2 #header_div_2 div #right {
   -webkit-animation: slide-right 4.179s ease-in infinite;
           animation: slide-right 4.179s ease-in infinite;
   bottom: 48.5vh;
   right: 29vw;
 }
 
-header #header_div_2 div:nth-of-type(3) {
+header #header_row_2 #header_div_2 div:nth-of-type(3) {
   width: 100%;
   margin: 0 auto;
   text-align: center;
   z-index: inherit;
 }
 
-header #header_div_2 div:nth-of-type(3) .btn {
+header #header_row_2 #header_div_2 div:nth-of-type(3) .btn {
   text-transform: uppercase;
   width: 25%;
   text-align: center;
@@ -155,7 +159,6 @@ header #header_div_2 div:nth-of-type(3) .btn {
 
 main h1 {
   text-transform: uppercase;
-  width: 30%;
   margin: 20px auto;
   font-size: 2.5em;
 }
@@ -333,10 +336,4 @@ main #who_we_are p {
     color: #ff9a26;
   }
 }
-
-@media screen and (min-width: 992px) {
-  .nav-item {
-    color: red;
-  }
-}
-/*# sourceMappingURL=h_styles.css.map */
+/*# sourceMappingURL=home_styles.css.map */
