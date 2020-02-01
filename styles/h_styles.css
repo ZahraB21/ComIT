@@ -11,6 +11,8 @@ body {
 header .navbar {
   height: 80px;
   background-color: #23272b;
+  z-index: 1;
+  padding: 0;
 }
 
 header .navbar .navbar-brand {
@@ -24,16 +26,35 @@ header .navbar .navbar-brand {
   margin-bottom: 2.5px;
 }
 
-header .navbar .active {
-  border-bottom: 3px dotted #af6c1e;
-}
-
-header .navbar span {
+header .navbar .navbar-brand #it {
   font-weight: bold;
   color: #af6c1e;
 }
 
-header .navbar li > .nav-link {
+header .navbar .active {
+  border-bottom: 3px dotted #af6c1e;
+}
+
+header .navbar .navbar-toggler {
+  margin-right: 16px;
+}
+
+header .navbar .collapse {
+  z-index: 1;
+}
+
+header .navbar #navbarSupportedContent {
+  margin-top: 10px;
+  background: #23272b;
+  padding: 0;
+}
+
+header .navbar #navbarSupportedContent ul {
+  width: 100%;
+  padding: 0;
+}
+
+header .navbar #navbarSupportedContent .nav-link {
   color: white;
   text-transform: uppercase;
   text-align: left;
@@ -167,7 +188,7 @@ main #what_we_do #description p {
 }
 
 main #our_numbers {
-  margin-top: 50px;
+  margin: 50px auto 10% auto;
 }
 
 main #our_numbers .row {
@@ -205,16 +226,38 @@ main #our_numbers .cols h3 {
   z-index: 1;
 }
 
+main #our_numbers .cols #companies {
+  font-size: 1.5rem;
+  padding-right: 5px;
+}
+
 main #our_numbers .cols p {
   width: 90%;
+  height: 200px;
   color: black;
   margin: -30px auto 0px auto;
   padding: 45px 25px 25px 25px;
-  border-top: 1px solid rgba(46, 44, 44, 0.6);
+  border-top: 8px double rgba(46, 44, 44, 0.5);
   border-left: 8px double #061646ee;
   border-right: 8px double #061646ee;
   border-bottom: 8px double #061646ee;
   z-index: -1;
+}
+
+main #who_we_are {
+  padding-top: 40px;
+  background: #23272b;
+  margin-bottom: 30px;
+}
+
+main #who_we_are p {
+  color: rgba(236, 232, 232, 0.986);
+  width: 80%;
+  margin: 10px auto;
+  text-align: justify;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  padding: 30px 80px;
 }
 
 @-webkit-keyframes slide-left {
@@ -288,6 +331,12 @@ main #our_numbers .cols p {
     -webkit-transform: scaleY(1);
             transform: scaleY(1);
     color: #ff9a26;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .nav-item {
+    color: red;
   }
 }
 /*# sourceMappingURL=h_styles.css.map */

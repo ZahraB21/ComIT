@@ -1,3 +1,9 @@
+@mixin darkBackground {
+    padding-top: 40px;
+    background: $primaryColor;
+    margin-bottom: 30px;
+}
+
 // Shared
 $primaryColor: #23272b;
 $secondColor : #af6c1e;
@@ -19,6 +25,8 @@ header{
     .navbar{
         height: 80px;
         background-color: $primaryColor;
+        z-index: 1;
+        padding: 0;
         
         .navbar-brand{
             color: white;
@@ -28,25 +36,44 @@ header{
             background-color: $darkColor;
             box-shadow: 2px 3px 2px white;
             margin-bottom: 2.5px;
+            
+            #it{
+                font-weight: bold;
+                color: $secondColor;
+            }
         }
     
         .active{
             border-bottom: 3px dotted #af6c1e;
         }
 
-        span{
-            font-weight: bold;
-            color: $secondColor;
+        .navbar-toggler{
+            margin-right: 16px;
+        }
+
+        .collapse{
+            z-index: 1;
         }
         
-        li>.nav-link{
-            color: white;
-            text-transform: uppercase;
-            text-align: left;
-            padding-left: 0;
-            padding-right: 0;
+        #navbarSupportedContent{
+            margin-top: 10px;
+            background: $primaryColor;
+            padding: 0;
+
+            ul{
+                width: 100%;
+                padding: 0;
+            }
+            
+            .nav-link{
+                color: white;
+                text-transform: uppercase;
+                text-align: left;
+                padding-left: 0;
+                padding-right: 0;
+            }    
         }
-    }
+    } 
 
     #header_div_2{
         padding: 0;
@@ -127,12 +154,13 @@ header{
                 margin-right: auto;
                 padding: 12.5px 0;
                 background-color: $darkColor;
-                // border-bottom: 7px double #af6c1e;
 
             }
-        }
     }
 }
+    }
+
+
 
 main{
     
@@ -154,9 +182,7 @@ main{
     }
 
     #what_we_do{
-        padding-top: 40px;
-        background: $primaryColor;
-        margin-bottom: 30px;
+        @include darkBackground();
         
         
         #description{
@@ -177,7 +203,7 @@ main{
 
     #our_numbers{
 
-        margin-top: 50px;
+        margin: 50px auto 10% auto;
 
         .row{
             width: 100%;
@@ -212,18 +238,39 @@ main{
                 background-color: $darkColor;  
                 z-index: 1; 
             }
-    
+            
+            #companies{
+                font-size: 1.5rem;
+                padding-right: 5px;
+            }
+
             p{
                 width: 90%;
+                height: 200px;
                 color: black;
                 margin: -30px auto 0px auto;
                 padding: 45px 25px 25px 25px ;
-                border-top: 1px solid rgba(46, 44, 44, 0.6);
+                border-top: 8px double rgba(46, 44, 44, 0.5);
                 border-left: 8px double $darkColor;
                 border-right: 8px double $darkColor;
                 border-bottom: 8px double $darkColor;
                 z-index: -1;
             }
+        }
+
+    }
+
+    #who_we_are{
+        @include darkBackground();
+
+        p{
+            color: rgba(236, 232, 232, 0.986);
+            width: 80%;
+            margin: 10px auto;
+            text-align: justify;
+            font-size: 1.2em;
+            line-height: 1.5em;
+            padding: 30px 80px;   
         }
 
     }
@@ -265,3 +312,12 @@ main{
         
     }
 }
+
+// ---------------- MEDIA QUERIES ----------------
+
+@media screen and (min-width: 992px) {
+        .nav-item{
+            color: red;
+        }
+    
+ }
