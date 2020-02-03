@@ -1,8 +1,45 @@
-@media (min-width: 992px) {
-  .navbar-expand-lg .navbar-nav {
+@media only screen and (min-width: 776px) {
+  main #what_we_do #description p {
+    padding: 30px 90px;
+    border-left: 15px double #e4e2e2;
+    border-right: 15px double #e4e2e2;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  header .navbar .navbar-toggler {
+    margin-right: 5%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  header .navbar-expand-lg .navbar-nav {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
+  }
+  header #header_row_2 #header_div_2 #header_column h1 {
+    padding: 1.5% 3%;
+  }
+  header #header_row_2 #header_div_2 #header_column #time {
+    width: 50%;
+    font-size: 2.5rem;
+  }
+  header #header_row_2 #header_div_2 #header_column #recode {
+    width: 50%;
+    font-size: 2.5rem;
+    margin: 0 auto 1% auto;
+  }
+  header #header_row_2 #header_div_2 #header_column .btn {
+    width: 40%;
+    font-size: 2rem;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  header #header_row_2 #header_div_2 #header_column #time {
+    margin: 2% auto 1% auto;
   }
 }
 
@@ -91,12 +128,26 @@ header #header_row_2 #header_div_2 {
 }
 
 header #header_row_2 #header_div_2 #header_column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   height: 100%;
 }
 
 header #header_row_2 #header_div_2 h1 {
-  padding: 1.5% 3%;
+  font-size: 2rem;
+  padding: 1.5% 2%;
   text-transform: uppercase;
   color: white;
   background: rgba(46, 44, 44, 0.86);
@@ -106,54 +157,32 @@ header #header_row_2 #header_div_2 h1 {
 }
 
 header #header_row_2 #header_div_2 #time {
-  width: 50%;
-  margin: -10% auto 1% auto;
+  width: 80%;
+  margin: 0% auto 1% auto;
 }
 
 header #header_row_2 #header_div_2 #recode {
-  width: 50%;
-  margin: 0 auto 1% auto;
+  width: 80%;
+  margin: 0 auto;
   padding-right: 0;
   -webkit-animation: change-color ease-in 4.17s infinite;
           animation: change-color ease-in 4.17s infinite;
 }
 
-header #header_row_2 #header_div_2 div #left, header #header_row_2 #header_div_2 div #right {
-  color: white;
-  font-size: 6rem;
-  display: block;
-  z-index: 1;
-  position: absolute;
-}
-
-header #header_row_2 #header_div_2 div #left {
-  -webkit-animation: slide-left 4.179s ease-in infinite;
-          animation: slide-left 4.179s ease-in infinite;
-  bottom: 48.5vh;
-  left: 31vw;
-}
-
-header #header_row_2 #header_div_2 div #right {
-  -webkit-animation: slide-right 4.179s ease-in infinite;
-          animation: slide-right 4.179s ease-in infinite;
-  bottom: 48.5vh;
-  right: 29vw;
-}
-
-header #header_row_2 #header_div_2 div:nth-of-type(3) {
+header #header_row_2 #header_div_2 div:nth-of-type(1) {
   width: 100%;
   margin: 0 auto;
   text-align: center;
   z-index: inherit;
 }
 
-header #header_row_2 #header_div_2 div:nth-of-type(3) .btn {
+header #header_row_2 #header_div_2 div:nth-of-type(1) .btn {
+  font-size: 1rem;
   text-transform: uppercase;
-  width: 25%;
+  width: 65%;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 12.5px 0;
+  margin: 1.5% auto;
+  padding: 7.5px 0;
   background-color: #061646ee;
 }
 
@@ -179,31 +208,29 @@ main #what_we_do {
 }
 
 main #what_we_do #description p {
+  padding: 33px 10px;
   color: rgba(236, 232, 232, 0.986);
   width: 80%;
   margin: 10px auto 120px auto;
   text-align: justify;
   font-size: 1.2em;
   line-height: 1.5em;
-  padding: 30px 80px;
-  border-left: 15px double #e4e2e2;
-  border-right: 15px double #e4e2e2;
 }
 
 main #our_numbers {
-  margin: 50px auto 10% auto;
+  margin: 50px auto 15% auto;
 }
 
 main #our_numbers .row {
   width: 100%;
-  margin: 20px auto;
+  margin: 10px auto;
   padding: 0;
   text-align: center;
 }
 
 main #our_numbers h1 {
   color: #061646ee;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 main #our_numbers #number_columns {
@@ -214,16 +241,17 @@ main #our_numbers #number_columns {
 
 main #our_numbers .cols {
   width: 80%;
-  margin: 0 auto;
+  margin: 0 auto 20px auto;
 }
 
 main #our_numbers .cols h3 {
-  width: 55%;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
   text-align: center;
   padding: 35px 15px;
   margin: 5px auto 0 auto;
   border: 3px solid #af6c1e;
-  border-radius: 50%;
   color: white;
   background-color: #061646ee;
   z-index: 1;
@@ -235,11 +263,10 @@ main #our_numbers .cols #companies {
 }
 
 main #our_numbers .cols p {
-  width: 90%;
   height: 200px;
   color: black;
   margin: -30px auto 0px auto;
-  padding: 45px 25px 25px 25px;
+  padding: 30px 15px 0 15px;
   border-top: 8px double rgba(46, 44, 44, 0.5);
   border-left: 8px double #061646ee;
   border-right: 8px double #061646ee;

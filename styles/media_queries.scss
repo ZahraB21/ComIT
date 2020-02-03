@@ -1,8 +1,73 @@
 // ---------------- MEDIA QUERIES ----------------
-
-@media (min-width: 992px){
-    .navbar-expand-lg .navbar-nav {
-        justify-content: flex-end;
+@media only screen and (min-width: 776px) {
+    main{
+        #what_we_do{
+            #description{
+                p{
+                    padding: 30px 90px;
+                    border-left: 15px double rgb(228, 226, 226);
+                    border-right: 15px double rgb(228, 226, 226);
+                }
+            }
+        }
     }
+}
 
+@media only screen and (max-width: 991px) {
+    header{
+        .navbar{
+            .navbar-toggler{
+                margin-right: 5%;
+            }
+        }
+    }     
+}
+
+@media only screen and (min-width: 992px){
+    header{
+        .navbar-expand-lg .navbar-nav {
+            justify-content: flex-end;
+        }
+        #header_row_2{
+            #header_div_2{
+                #header_column{    
+                    h1{
+                        padding: 1.5% 3%;
+                    }
+            
+                    #time{
+                        width: 50%;
+                        font-size: 2.5rem;
+                    }
+            
+                    #recode{
+                        width: 50%;
+                        font-size: 2.5rem;
+                        margin: 0 auto 1% auto;
+                    }
+            
+                    .btn{
+                        width: 40%;
+                        font-size: 2rem;
+                        margin: 0 auto;
+                    }
+               }
+            }
+        }
+        
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    header{
+        #header_row_2{
+            #header_div_2{
+                #header_column{
+                    #time{
+                        margin: 2% auto 1% auto;
+                    }
+                }
+            }
+        }
+    }
 }
