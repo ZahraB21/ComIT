@@ -1,4 +1,4 @@
-@import "media_queries";
+
 
 @mixin darkBackground {
     padding-top: 40px;
@@ -12,9 +12,11 @@ $secondColor : #af6c1e;
 $darkColor: #061646ee;
 
 // Basic
-body{
+body, html{
     font-family: 'Cabin', sans-serif;
     color: white;
+    margin: 0;
+    padding: 0;
 }
 
 .container-fluid{
@@ -135,7 +137,7 @@ header{
                 z-index: inherit;
                 
                 .btn{
-                    font-size: 1rem;
+                    font-size: 1.5rem;
                     text-transform: uppercase;
                     width: 65%;
                     text-align: center;
@@ -177,7 +179,6 @@ main{
                 text-align: justify;
                 font-size: 1.2em;
                 line-height: 1.5em;
-                
             }
         }
     }
@@ -244,17 +245,39 @@ main{
     // SECTION: WE ARE
     #who_we_are{
         @include darkBackground();
-
-        p{
-            color: rgba(236, 232, 232, 0.986);
-            width: 80%;
-            margin: 10px auto;
-            text-align: justify;
-            font-size: 1.2em;
-            line-height: 1.5em;
-            padding: 30px 80px;   
+           
+        #we_are_images{
+        
+            p{
+                color: rgba(236, 232, 232, 0.986);
+                width: 80%;
+                text-align: center;
+                text-align: justify;
+                font-size: 1.2em;
+                line-height: 1.5em; 
+                padding: 50px 0 0 10px;
+                margin: 0 auto 70px auto;
+                vertical-align: middle;
+            }
         }
 
+        figure{
+            img{
+                margin-bottom: 10px;
+                border-bottom: 5px solid $secondColor;
+                border-top: 5px solid white;
+                
+            }
+            #lecture, #teamwork{
+                width: 400px;
+            }
+            
+            #studying{
+                height: 605px;
+            }
+        }
+        
+        
     }
 
 }
@@ -295,3 +318,4 @@ main{
     }
 }
 
+@import "media_queries";
