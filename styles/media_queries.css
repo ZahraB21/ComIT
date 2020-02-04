@@ -44,6 +44,12 @@
   #faq_header_d2 h2 {
     font-size: 2.5rem;
   }
+  #contact_header_d2 h1 {
+    font-size: 4.5rem;
+  }
+  #contact_header_d2 h2 {
+    font-size: 2.5rem;
+  }
 }
 
 @media only screen and (min-width: 1200px) {

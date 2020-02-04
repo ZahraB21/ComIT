@@ -9,6 +9,31 @@
     margin-bottom: 30px;
 }
 
+@mixin header_row_2($image){
+    min-height: 100vh;
+    min-width: 100%;
+    width: 100%;
+    height: 100vh;
+
+    background-image: $image;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    h1, h2{
+        text-align: center;
+    }
+
+    h1{
+        text-transform: uppercase;
+        animation: change-color forwards 3s infinite;
+    }
+}
+
 // Shared
 $primaryColor: #23272b;
 $secondColor : #af6c1e;
@@ -386,28 +411,7 @@ footer{
         margin: 0;
     }
     #faq_header_d2{
-        min-height: 100vh;
-        min-width: 100%;
-        width: 100%;
-        height: 100vh;
-    
-        background-image: url(/images/banner-faq.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    
-    
-        h1, h2{
-            text-align: center;
-        }
-    
-        h1{
-            text-transform: uppercase;
-            animation: change-color forwards 3s infinite;
-        }
+       @include header_row_2(url(/images/banner-faq.jpg));
     }
     
 }
@@ -482,10 +486,56 @@ footer{
             }
         }
     }
-
-
-    
 }
+
+// --------------------- CONTACT STYLES ---------------------
+#contact_header{
+    .row{
+        margin: 0;
+    }
+    #contact_header_d2{
+       @include header_row_2(url(/images/banner-contact.jpg));
+    }
+}
+
+#contact_us_section{
+    @include darkBackground();
+    border-top: 5px solid white;
+    padding-bottom: 120px;
+
+    form{
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+
+        label{
+            font-size: 1.25rem;
+            padding-left: 10px;
+        }
+
+        #emailHelp{
+            color: white;
+            padding-left: 10px;
+        }
+
+        button{
+            width: 80%;
+            text-align: center;
+            background: $darkColor;
+            color: white;
+            font-size: 1.25rem;
+            text-transform: uppercase;
+            padding: 10px 10px;
+            border: 3px double white;
+
+            &:hover{
+                font-size: 1.5rem;
+                border: 3px double $secondColor;
+            }
+        }
+    }
+}
+
 
 
 @keyframes slide-left{
