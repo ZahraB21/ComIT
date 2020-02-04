@@ -293,6 +293,12 @@ main #our_supporters h1 {
   margin-bottom: 30px;
 }
 
+main #our_supporters p {
+  color: black;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
 main #our_supporters #our_supporters_carousel {
   width: 70%;
   margin-left: auto;
