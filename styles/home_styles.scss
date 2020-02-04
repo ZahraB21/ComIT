@@ -35,6 +35,11 @@ body, html{
 
 // Header
 header{
+
+    #header_nav_row{
+        margin-right: 0;
+    }
+
     .navbar{
         height: 80px;
         background-color: $primaryColor;
@@ -96,8 +101,9 @@ header{
 
     // --------------------- HOME PAGE STYLES ---------------------
 
-    #header_row_2{
+    #header_row_2{        
         width: 100%;
+        margin: 0;
 
         #header_div_2{
             padding: 0;
@@ -105,12 +111,12 @@ header{
             min-height: 100vh;
             width: 100vw;
             height: 100vh;
-            margin: 0 15px;
             
             background-image: url(/images/homePage.jpg);
             background-repeat: no-repeat;
             background-size: cover;
-            
+            object-fit: scale-down;
+
             #header_column{
                 display: flex;
                 flex-direction: column;
@@ -300,7 +306,7 @@ main{
 
     // OUR SUPPORTERS
     #our_supporters{
-        margin: 50px auto 10% auto;
+        margin: 50px auto 15% auto;
 
         .row{
             width: 100%;
@@ -312,6 +318,7 @@ main{
         h1{
             color: #061646ee;
             margin-bottom: 30px;
+            font-size: 2rem;
         }
 
         p{
@@ -374,39 +381,46 @@ footer{
 
 // --------------------- FAQ PAGE STYLES ---------------------
 
-#faq_header_d2{
-    min-height: 100vh;
-    min-width: 100%;
-    width: 100%;
-    height: 100vh;
-
-    background-image: url(/images/banner-faq.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-
-    h1, h2{
-        text-align: center;
+#faq_header{
+    .row{
+        margin: 0;
     }
-
-    h1{
-        text-transform: uppercase;
-        animation: change-color forwards 3s infinite;
+    #faq_header_d2{
+        min-height: 100vh;
+        min-width: 100%;
+        width: 100%;
+        height: 100vh;
+    
+        background-image: url(/images/banner-faq.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    
+        h1, h2{
+            text-align: center;
+        }
+    
+        h1{
+            text-transform: uppercase;
+            animation: change-color forwards 3s infinite;
+        }
     }
+    
 }
 
 #faq_section{
     @include darkBackground();
     border-top: 5px solid white;
-    padding-bottom: 100px;
+    padding-bottom: 120px;
 
     .row{
         width: 90%;
         margin: 0 auto;
+
 
         .btn{
             color: white;
@@ -425,12 +439,10 @@ footer{
 
         .collapse{
             width: 90%;
-            margin: 0 auto 20px auto;
-            padding-left: 5px;
-            padding-right: 5px;
-            
+            margin-bottom: 10px;
             span{
             text-align: justify;
+            font-size: 18px;
             }
         }
     }
@@ -440,32 +452,37 @@ footer{
     height: 40vh;
     width: 100%;
     
-    h1{
-        @include headerInLightBackground();
-    }
-
-    #dare{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-        a{
+    .col-12{
+        padding: 0;
+        h1{
+            @include headerInLightBackground();
+        }
+    
+        #dare{
             display: flex;
-            width: 40%;
-            margin-top: 5% auto 0 auto;
             justify-content: center;
             align-items: center;
-            padding: 20px 0;
-            text-transform: uppercase;
-        }
-
-        a:hover{
-            font-size: 1.75rem;
-            background-color: white;
-            color: $primaryColor;
-            border: 5px double $secondColor;
+            margin-top: 50px;
+            
+            a{
+                display: flex;
+                width: 40%;
+                margin-top: 5% auto 0 auto;
+                justify-content: center;
+                align-items: center;
+                padding: 20px 0;
+                text-transform: uppercase;
+            }
+    
+            a:hover{
+                font-size: 1.75rem;
+                background-color: white;
+                color: $primaryColor;
+                border: 5px double $secondColor;
+            }
         }
     }
+
 
     
 }

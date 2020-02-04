@@ -35,6 +35,9 @@
     font-size: 2rem;
     margin: 0 auto;
   }
+  main #our_supporters h1 {
+    font-size: 2.5rem;
+  }
   #faq_header_d2 h1 {
     font-size: 4.5rem;
   }

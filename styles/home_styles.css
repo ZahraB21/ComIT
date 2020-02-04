@@ -14,6 +14,10 @@ body, html {
   padding: 0;
 }
 
+header #header_nav_row {
+  margin-right: 0;
+}
+
 header .navbar {
   height: 80px;
   background-color: #23272b;
@@ -76,6 +80,7 @@ header .navbar #navbarSupportedContent .nav-link {
 
 header #header_row_2 {
   width: 100%;
+  margin: 0;
 }
 
 header #header_row_2 #header_div_2 {
@@ -84,10 +89,11 @@ header #header_row_2 #header_div_2 {
   min-height: 100vh;
   width: 100vw;
   height: 100vh;
-  margin: 0 15px;
   background-image: url(/images/homePage.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
 }
 
 header #header_row_2 #header_div_2 #header_column {
@@ -285,7 +291,7 @@ main #who_we_are #who_we_are_images figure img {
 }
 
 main #our_supporters {
-  margin: 50px auto 10% auto;
+  margin: 50px auto 15% auto;
 }
 
 main #our_supporters .row {
@@ -298,6 +304,7 @@ main #our_supporters .row {
 main #our_supporters h1 {
   color: #061646ee;
   margin-bottom: 30px;
+  font-size: 2rem;
 }
 
 main #our_supporters p {
@@ -358,7 +365,11 @@ footer .row #icons a i {
   color: white;
 }
 
-#faq_header_d2 {
+#faq_header .row {
+  margin: 0;
+}
+
+#faq_header #faq_header_d2 {
   min-height: 100vh;
   min-width: 100%;
   width: 100%;
@@ -377,11 +388,11 @@ footer .row #icons a i {
           align-items: center;
 }
 
-#faq_header_d2 h1, #faq_header_d2 h2 {
+#faq_header #faq_header_d2 h1, #faq_header #faq_header_d2 h2 {
   text-align: center;
 }
 
-#faq_header_d2 h1 {
+#faq_header #faq_header_d2 h1 {
   text-transform: uppercase;
   -webkit-animation: change-color forwards 3s infinite;
           animation: change-color forwards 3s infinite;
@@ -392,7 +403,7 @@ footer .row #icons a i {
   background: #23272b;
   margin-bottom: 30px;
   border-top: 5px solid white;
-  padding-bottom: 100px;
+  padding-bottom: 120px;
 }
 
 #faq_section .row {
@@ -417,13 +428,12 @@ footer .row #icons a i {
 
 #faq_section .row .collapse {
   width: 90%;
-  margin: 0 auto 20px auto;
-  padding-left: 5px;
-  padding-right: 5px;
+  margin-bottom: 10px;
 }
 
 #faq_section .row .collapse span {
   text-align: justify;
+  font-size: 18px;
 }
 
 #faq_dare_to_change_section {
@@ -431,12 +441,16 @@ footer .row #icons a i {
   width: 100%;
 }
 
-#faq_dare_to_change_section h1 {
+#faq_dare_to_change_section .col-12 {
+  padding: 0;
+}
+
+#faq_dare_to_change_section .col-12 h1 {
   color: #061646ee;
   margin-bottom: 30px;
 }
 
-#faq_dare_to_change_section #dare {
+#faq_dare_to_change_section .col-12 #dare {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -446,9 +460,10 @@ footer .row #icons a i {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 50px;
 }
 
-#faq_dare_to_change_section #dare a {
+#faq_dare_to_change_section .col-12 #dare a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -464,7 +479,7 @@ footer .row #icons a i {
   text-transform: uppercase;
 }
 
-#faq_dare_to_change_section #dare a:hover {
+#faq_dare_to_change_section .col-12 #dare a:hover {
   font-size: 1.75rem;
   background-color: white;
   color: #23272b;
@@ -581,6 +596,9 @@ footer .row #icons a i {
     width: 40%;
     font-size: 2rem;
     margin: 0 auto;
+  }
+  main #our_supporters h1 {
+    font-size: 2.5rem;
   }
   #faq_header_d2 h1 {
     font-size: 4.5rem;
