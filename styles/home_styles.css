@@ -237,30 +237,112 @@ main #who_we_are {
   margin-bottom: 30px;
 }
 
-main #who_we_are #we_are_images p {
+main #who_we_are #we_are_context {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 0;
+}
+
+main #who_we_are #we_are_context p {
   color: rgba(236, 232, 232, 0.986);
   width: 80%;
-  text-align: center;
   text-align: justify;
   font-size: 1.2em;
   line-height: 1.5em;
-  padding: 50px 0 0 10px;
   margin: 0 auto 70px auto;
-  vertical-align: middle;
 }
 
-main #who_we_are figure img {
+main #who_we_are #who_we_are_images {
+  margin: 0;
+}
+
+main #who_we_are #who_we_are_images figure {
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+}
+
+main #who_we_are #who_we_are_images figure img {
   margin-bottom: 10px;
   border-bottom: 5px solid #af6c1e;
   border-top: 5px solid white;
-}
-
-main #who_we_are figure #lecture, main #who_we_are figure #teamwork {
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 400px;
 }
 
-main #who_we_are figure #studying {
-  height: 605px;
+main #our_supporters {
+  margin: 50px auto 10% auto;
+}
+
+main #our_supporters .row {
+  width: 100%;
+  margin: 10px auto;
+  padding: 0;
+  text-align: center;
+}
+
+main #our_supporters h1 {
+  color: #061646ee;
+  margin-bottom: 30px;
+}
+
+main #our_supporters #our_supporters_carousel {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main #our_supporters #our_supporters_carousel .carousel-inner {
+  border: 1px solid lightslategrey;
+  padding: 30px 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+main #our_supporters #our_supporters_carousel .carousel-inner img {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer {
+  padding-top: 40px;
+  background: #23272b;
+  margin-bottom: 30px;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+footer .row {
+  margin: 0;
+  padding: 20px 40px;
+}
+
+footer .row p {
+  text-align: center;
+  margin: 0;
+  padding: 5px 0;
+  vertical-align: middle;
+}
+
+footer .row #icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .row #icons a i {
+  color: white;
 }
 
 @-webkit-keyframes slide-left {
@@ -345,13 +427,13 @@ main #who_we_are figure #studying {
   }
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 990px) {
   header .navbar .navbar-toggler {
     margin-right: 5%;
   }
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 991px) {
   header .navbar-expand-lg .navbar-nav {
     -webkit-box-pack: end;
         -ms-flex-pack: end;

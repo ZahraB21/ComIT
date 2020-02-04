@@ -246,42 +246,109 @@ main{
     #who_we_are{
         @include darkBackground();
            
-        #we_are_images{
-        
+        #we_are_context{
+            display: flex;
+            align-items: center;
+            padding-right: 0;
+
             p{
                 color: rgba(236, 232, 232, 0.986);
                 width: 80%;
-                text-align: center;
                 text-align: justify;
                 font-size: 1.2em;
                 line-height: 1.5em; 
-                padding: 50px 0 0 10px;
                 margin: 0 auto 70px auto;
-                vertical-align: middle;
-            }
-        }
-
-        figure{
-            img{
-                margin-bottom: 10px;
-                border-bottom: 5px solid $secondColor;
-                border-top: 5px solid white;
                 
             }
-            #lecture, #teamwork{
-                width: 400px;
-            }
-            
-            #studying{
-                height: 605px;
-            }
         }
-        
-        
+
+        #who_we_are_images{
+            margin: 0;
+            
+            figure{
+                max-width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+                padding-left: 0;
+                img{
+                    margin-bottom: 10px;
+                    border-bottom: 5px solid $secondColor;
+                    border-top: 5px solid white;
+                    height: auto;
+                    object-fit: cover;
+                    width: 400px;
+                }
+            
+            }
+        }  
     }
 
+    // OUR SUPPORTERS
+    #our_supporters{
+        margin: 50px auto 10% auto;
+
+        .row{
+            width: 100%;
+            margin: 10px auto;
+            padding: 0;
+            text-align: center;
+        }
+        
+        h1{
+            color: #061646ee;
+            margin-bottom: 30px;
+        }
+
+        #our_supporters_carousel{
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+
+            .carousel-inner{
+                border: 1px solid lightslategrey;
+                padding: 30px 10px;
+                border-radius: 5px;
+                margin-bottom: 10px;
+
+                img{
+                    text-align: center;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+        }
+    }
 }
 
+// FOOTER
+footer{
+    @include darkBackground();
+    margin-bottom: 0;
+    padding: 0;
+
+    .row{
+        margin: 0;
+        padding: 20px 40px;
+        
+        p{
+            text-align: center;
+            margin: 0;
+            padding: 5px 0;
+            vertical-align: middle;
+        }
+
+        #icons{
+            display: flex;
+            justify-content: center;
+
+            a{
+                i{
+                    color: white;
+                }
+            }
+        }
+    }
+}
 
 
 

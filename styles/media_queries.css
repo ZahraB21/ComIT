@@ -6,13 +6,13 @@
   }
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 990px) {
   header .navbar .navbar-toggler {
     margin-right: 5%;
   }
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 991px) {
   header .navbar-expand-lg .navbar-nav {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
