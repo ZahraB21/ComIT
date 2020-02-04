@@ -30,6 +30,7 @@ header .navbar .navbar-brand {
   -webkit-box-shadow: 2px 3px 2px white;
           box-shadow: 2px 3px 2px white;
   margin-bottom: 2.5px;
+  margin-left: 60px;
 }
 
 header .navbar .navbar-brand #it {
@@ -60,6 +61,11 @@ header .navbar #navbarSupportedContent ul {
   padding: 0;
 }
 
+header .navbar #navbarSupportedContent ul .nav-item {
+  margin-right: 3em;
+  margin-left: 3em;
+}
+
 header .navbar #navbarSupportedContent .nav-link {
   color: white;
   text-transform: uppercase;
@@ -69,8 +75,7 @@ header .navbar #navbarSupportedContent .nav-link {
 }
 
 header #header_row_2 {
-  margin: 0;
-  padding: 0;
+  width: 100%;
 }
 
 header #header_row_2 #header_div_2 {
@@ -79,6 +84,7 @@ header #header_row_2 #header_div_2 {
   min-height: 100vh;
   width: 100vw;
   height: 100vh;
+  margin: 0 15px;
   background-image: url(/images/homePage.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -162,6 +168,7 @@ main #what_we_do {
   padding-top: 40px;
   background: #23272b;
   margin-bottom: 30px;
+  width: 100%;
 }
 
 main #what_we_do #description p {
@@ -235,6 +242,7 @@ main #who_we_are {
   padding-top: 40px;
   background: #23272b;
   margin-bottom: 30px;
+  width: 100%;
 }
 
 main #who_we_are #we_are_context {
@@ -244,7 +252,6 @@ main #who_we_are #we_are_context {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-right: 0;
 }
 
 main #who_we_are #we_are_context p {
@@ -274,7 +281,7 @@ main #who_we_are #who_we_are_images figure img {
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
-  width: 400px;
+  max-width: 100%;
 }
 
 main #our_supporters {
@@ -351,6 +358,119 @@ footer .row #icons a i {
   color: white;
 }
 
+#faq_header_d2 {
+  min-height: 100vh;
+  min-width: 100%;
+  width: 100%;
+  height: 100vh;
+  background-image: url(/images/banner-faq.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#faq_header_d2 h1, #faq_header_d2 h2 {
+  text-align: center;
+}
+
+#faq_header_d2 h1 {
+  text-transform: uppercase;
+  -webkit-animation: change-color forwards 3s infinite;
+          animation: change-color forwards 3s infinite;
+}
+
+#faq_section {
+  padding-top: 40px;
+  background: #23272b;
+  margin-bottom: 30px;
+  border-top: 5px solid white;
+  padding-bottom: 100px;
+}
+
+#faq_section .row {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#faq_section .row .btn {
+  color: white;
+  background: #061646ee;
+  height: 150px;
+  width: 100%;
+  padding: 15px 16px;
+  border: 4px double white;
+  margin-bottom: 10px;
+}
+
+#faq_section .row .btn:hover {
+  font-size: 1.35rem;
+  border: 3px solid #af6c1e;
+}
+
+#faq_section .row .collapse {
+  width: 90%;
+  margin: 0 auto 20px auto;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#faq_section .row .collapse span {
+  text-align: justify;
+}
+
+#faq_dare_to_change_section {
+  height: 40vh;
+  width: 100%;
+}
+
+#faq_dare_to_change_section h1 {
+  color: #061646ee;
+  margin-bottom: 30px;
+}
+
+#faq_dare_to_change_section #dare {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#faq_dare_to_change_section #dare a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40%;
+  margin-top: 5% auto 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0;
+  text-transform: uppercase;
+}
+
+#faq_dare_to_change_section #dare a:hover {
+  font-size: 1.75rem;
+  background-color: white;
+  color: #23272b;
+  border: 5px double #af6c1e;
+}
+
 @-webkit-keyframes slide-left {
   from {
     -webkit-transform: scaleX(0);
@@ -408,7 +528,7 @@ footer .row #icons a i {
   to {
     -webkit-transform: scaleY(1);
             transform: scaleY(1);
-    color: #ff9a26;
+    color: #ff9a20;
   }
 }
 
@@ -421,7 +541,7 @@ footer .row #icons a i {
   to {
     -webkit-transform: scaleY(1);
             transform: scaleY(1);
-    color: #ff9a26;
+    color: #ff9a20;
   }
 }
 
@@ -461,6 +581,12 @@ footer .row #icons a i {
     width: 40%;
     font-size: 2rem;
     margin: 0 auto;
+  }
+  #faq_header_d2 h1 {
+    font-size: 4.5rem;
+  }
+  #faq_header_d2 h2 {
+    font-size: 2.5rem;
   }
 }
 

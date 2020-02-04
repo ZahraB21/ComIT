@@ -1,8 +1,11 @@
-
-
 @mixin darkBackground {
     padding-top: 40px;
     background: $primaryColor;
+    margin-bottom: 30px;
+}
+
+@mixin headerInLightBackground{
+    color: #061646ee;
     margin-bottom: 30px;
 }
 
@@ -28,6 +31,8 @@ body, html{
     padding: 0;
 }
 
+// --------------------- SHARED STYLES ---------------------
+
 // Header
 header{
     .navbar{
@@ -44,6 +49,7 @@ header{
             background-color: $darkColor;
             box-shadow: 2px 3px 2px white;
             margin-bottom: 2.5px;
+            margin-left: 60px;
             
             #it{
                 font-weight: bold;
@@ -71,6 +77,11 @@ header{
             ul{
                 width: 100%;
                 padding: 0;
+
+                .nav-item{
+                    margin-right: 3em;
+                    margin-left: 3em;
+                }
             }
             
             .nav-link{
@@ -83,9 +94,10 @@ header{
         }
     } 
 
+    // --------------------- HOME PAGE STYLES ---------------------
+
     #header_row_2{
-        margin: 0;
-        padding: 0;
+        width: 100%;
 
         #header_div_2{
             padding: 0;
@@ -93,6 +105,7 @@ header{
             min-height: 100vh;
             width: 100vw;
             height: 100vh;
+            margin: 0 15px;
             
             background-image: url(/images/homePage.jpg);
             background-repeat: no-repeat;
@@ -105,6 +118,7 @@ header{
                 align-items: center;
                 width: 100%;
                 height: 100%;
+                
             }
     
             h1{
@@ -169,6 +183,7 @@ main{
     // SECTION: WHAT WE DO 
     #what_we_do{
         @include darkBackground();
+        width: 100%;
         
         #description{
             p{
@@ -179,6 +194,7 @@ main{
                 text-align: justify;
                 font-size: 1.2em;
                 line-height: 1.5em;
+                
             }
         }
     }
@@ -195,8 +211,7 @@ main{
         }
         
         h1{
-            color: #061646ee;
-            margin-bottom: 30px;
+            @include headerInLightBackground();
         }
 
         #number_columns{
@@ -245,11 +260,11 @@ main{
     // SECTION: WE ARE
     #who_we_are{
         @include darkBackground();
+        width: 100%;
            
         #we_are_context{
             display: flex;
             align-items: center;
-            padding-right: 0;
 
             p{
                 color: rgba(236, 232, 232, 0.986);
@@ -276,7 +291,7 @@ main{
                     border-top: 5px solid white;
                     height: auto;
                     object-fit: cover;
-                    width: 400px;
+                    max-width: 100%;
                 }
             
             }
@@ -357,6 +372,104 @@ footer{
 }
 
 
+// --------------------- FAQ PAGE STYLES ---------------------
+
+#faq_header_d2{
+    min-height: 100vh;
+    min-width: 100%;
+    width: 100%;
+    height: 100vh;
+
+    background-image: url(/images/banner-faq.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    h1, h2{
+        text-align: center;
+    }
+
+    h1{
+        text-transform: uppercase;
+        animation: change-color forwards 3s infinite;
+    }
+}
+
+#faq_section{
+    @include darkBackground();
+    border-top: 5px solid white;
+    padding-bottom: 100px;
+
+    .row{
+        width: 90%;
+        margin: 0 auto;
+
+        .btn{
+            color: white;
+            background: $darkColor;
+            height: 150px;
+            width: 100%;
+            padding: 15px 16px;
+            border: 4px double white;
+            margin-bottom: 10px;
+        }
+
+        .btn:hover{
+            font-size: 1.35rem;
+            border: 3px solid $secondColor;
+        }
+
+        .collapse{
+            width: 90%;
+            margin: 0 auto 20px auto;
+            padding-left: 5px;
+            padding-right: 5px;
+            
+            span{
+            text-align: justify;
+            }
+        }
+    }
+}
+
+#faq_dare_to_change_section{
+    height: 40vh;
+    width: 100%;
+    
+    h1{
+        @include headerInLightBackground();
+    }
+
+    #dare{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        a{
+            display: flex;
+            width: 40%;
+            margin-top: 5% auto 0 auto;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 0;
+            text-transform: uppercase;
+        }
+
+        a:hover{
+            font-size: 1.75rem;
+            background-color: white;
+            color: $primaryColor;
+            border: 5px double $secondColor;
+        }
+    }
+
+    
+}
+
 
 @keyframes slide-left{
     from {
@@ -386,7 +499,7 @@ footer{
     }
     to{
         transform: scaleY(1);
-        color: #ff9a26;
+        color: #ff9a20;
         
     }
 }
