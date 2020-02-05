@@ -23,6 +23,7 @@ header .navbar {
   background-color: #23272b;
   z-index: 1;
   padding: 0;
+  padding-bottom: 10px;
 }
 
 header .navbar .navbar-brand {
@@ -63,6 +64,7 @@ header .navbar #navbarSupportedContent {
 header .navbar #navbarSupportedContent ul {
   width: 100%;
   padding: 0;
+  padding-bottom: 15px;
 }
 
 header .navbar #navbarSupportedContent ul .nav-item {
@@ -629,7 +631,7 @@ footer .row #icons a i {
 }
 
 #register_section form {
-  width: 60%;
+  width: 95%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -806,6 +808,18 @@ footer .row #icons a i {
   }
 }
 
+@media only screen and (min-width: 560px) and (max-width: 990px) {
+  #register_section {
+    padding-bottom: 50px;
+  }
+  #register_section form {
+    width: 80%;
+  }
+  #register_section form fieldset {
+    padding: 10px 60px;
+  }
+}
+
 @media only screen and (min-width: 776px) {
   main #what_we_do #description p {
     padding: 30px 90px;
@@ -880,6 +894,12 @@ footer .row #icons a i {
   #register_header_d2 h2 {
     font-size: 2.5rem;
     padding: 1.5%;
+  }
+  #register_section form {
+    width: 65%;
+  }
+  #register_section form fieldset {
+    padding: 60px;
   }
 }
 

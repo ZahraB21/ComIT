@@ -1,4 +1,16 @@
 // ---------------- MEDIA QUERIES ----------------
+@media only screen and (min-width: 560px) and (max-width: 990px) {
+    #register_section{
+        padding-bottom: 50px;
+        form{
+            width: 80%;
+            fieldset{
+                padding: 10px 60px;
+            }
+        }
+    }
+}
+
 @media only screen and (min-width: 776px) {
     main{
         #what_we_do{
@@ -100,19 +112,31 @@
     #register_header_d2{
         h1,h2{
             border-left: 15px double white;
-            border-right: 15px double white;
-            
-            }
-            h1{
-                font-size: 4.5rem;
-                padding: 0.5% 100px;
-            }
-            h2{
-                font-size: 2.5rem;
-                padding: 1.5%;
-            }
+            border-right: 15px double white;    
+        }
+        
+        h1{
+            font-size: 4.5rem;
+            padding: 0.5% 100px;
+        }
+        h2{
+            font-size: 2.5rem;
+            padding: 1.5%;
+        }
+    }
+
+    #register_section{
+    form{
+        width: 65%;
+
+        fieldset{
+            padding: 60px;
+        }
     }
 }
+}
+
+
 
 @media only screen and (min-width: 1200px) {
     header{
