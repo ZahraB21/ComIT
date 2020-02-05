@@ -671,28 +671,6 @@ footer{
     }
 }
 
-
-@keyframes slide-left{
-    from {
-        transform:scaleX(0);
-
-    }
-    to{
-        transform: scaleX(1.17);
-        color: #003bee;
-    }
-}
-
-@keyframes slide-right{
-    from {
-        transform:scaleX(0);
-    } 
-    to{
-        transform: scaleX(1.17);
-        color: #003bee;
-    }
-}
-
 @keyframes change-color{
     from{
         color: white;
@@ -705,4 +683,6 @@ footer{
     }
 }
 
+
+// MEDIA QUERIES
 @import "media_queries";
