@@ -607,6 +607,8 @@ footer .row #icons a i {
 
 #register_section form fieldset {
   margin-bottom: 40px;
+  border: 5px double #cac7c7;
+  padding: 20px;
 }
 
 #register_section form fieldset legend {
@@ -615,7 +617,7 @@ footer .row #icons a i {
   border-radius: 0.5em;
   text-align: center;
   padding: 10px 5px;
-  margin-bottom: 30px;
+  margin-bottom: 5px;
 }
 
 #register_section form label {

@@ -558,6 +558,8 @@ footer{
 
         fieldset{
             margin-bottom: 40px;
+            border: 5px double rgb(202, 199, 199);
+            padding: 20px;
 
             legend{
                 width: 60%;
@@ -565,7 +567,7 @@ footer{
                 border-radius: 0.5em;
                 text-align: center;
                 padding: 10px 5px;
-                margin-bottom: 30px;
+                margin-bottom: 5px;
             }
         }
         label{
