@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://fonts.googleapis.com/css?family=Cabin:500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/6d1925da68.js" crossorigin="anonymous"></script>
+    <link rel='stylesheet' type='text/css' media='screen' href='/styles/home_styles.css'>
+    <title>Register</title>
+</head>
+<body>
+    <div class="container-fluid">
+        
+        <!-- HEADER -->
+        <header id="register_header">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 p-0">
+                        <nav class="navbar navbar-expand-lg ">
+                            <a href="index.html" class="navbar-brand">Com<span id="it">IT</span></a>
+                            <button class="navbar-toggler navbar-light bg-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                              </button>
+                            <div class="navbar-collapse collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a href="index.html" class="nav-link">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="faq.html" class="nav-link d-flex">FAQ</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="contact.html" class="nav-link d-flex ">Contact</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="register.html" class="nav-link d-flex active">Register</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <div class="container-fluid" id="register_header_d2">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2>Don't miss the opportunity</h2>
+                            <h1>Get a Scholarship</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- MAIN -->
+        <main>
+        
+             <!-- CONTACT US -->
+             <section id="register_section">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <h1 class='text-center ml-auto mr-auto'>Register<span>Now</span></h1>
+                            <p class="text-center mb-5">Fill the form to apply for a scholarship and access our free courses.</p>
+                            <form action="">
+                                <fieldset>
+                                    <legend>Personal Information</legend>
+                                    <div class="form-group">
+                                        <label for="name">Name</label>
+                                        <input type="text" name="name" class="form-control" id="name" placeholder="Enter your name here ..." required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="lastName">Last Name</label>
+                                        <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Enter your last name here ..." required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="dob">Date of Birth</label>
+                                        <input type="text" class="form-control" id="dob" name="dob" placeholder="Enter your date of birth here ..." required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="photoId">Photo ID number (eg; drivers license, PR Card, passport)</label>
+                                        <input type="text" class="form-control" id="photoId" name="photoId" placeholder="Enter your photo ID here ..." required>
+                                    </div>
+                                </fieldset>
+                                <fieldset>
+                                    <legend>Contact Information</legend>
+                                    <div class="form-group">
+                                        <label for="address">Address</label>
+                                        <input type="text" name="address" class="form-control" id="address" placeholder="Enter your address here ..." required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="city">City</label>
+                                        <input type="text" class="form-control" id="city" name="city" placeholder="Enter your city here ..." required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="country">Country</label>
+                                        <input type="text" class="form-control" id="country" name="country" placeholder="Enter your country here ..." required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="phone1">Phone #1</label>
+                                        <input type="text" class="form-control" id="phone1" name="phone1" placeholder="Enter your home phone here ..." required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="phone2">Phone #2</label>
+                                        <input type="text" class="form-control" id="phone2" name="phone2" placeholder="Enter your cell phone here ..." required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Email</label>
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="Enter your Email here ..." aria-describedby="emailHelp" required>
+                                        <small id="emailHelp" class="form-text">We'll never share your email with anyone else.</small>
+                                    </div>
+                                </fieldset>
+                                
+                                <fieldset>
+                                    <legend>Academic Information</legend>
+                                    <div class="form-group">
+                                        <label for="education">What is your highest level of education?</label>
+                                        <select class="form-control" id="education" name="education">
+                                          <option></option>
+                                          <option>Primary School Degree</option>
+                                          <option>Secondary School Degree</option>
+                                          <option>Undergraduate Degree</option>
+                                          <option>University Degree</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="status">What is the status of that education?</label>
+                                        <select class="form-control" id="status" name="status">
+                                          <option></option>
+                                          <option>Complete</option>
+                                          <option>Currently Studying/ On Track</option>
+                                          <option>Dropped Out/ Unfinished</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="dropOut">If you dropped out and have some pending exams/courses, how many and which ones?. How many years have you studied?</label>
+                                        <textarea class="form-control" name="dropOut" id="dropOut" cols="30" rows="5"></textarea>
+                                    </div>
+                                </fieldset>
+                                
+                                <fieldset>
+                                    <legend>IT Information</legend>
+                                    <div class="form-group">
+                                        <label for="computer_skills">Do you have computer skills?</label>
+                                        <div class="form-check form-check-inline" id="computer_skills">
+                                            <input class="form-check-input" type="radio" name="computer_skills" id="yes" value="Yes">
+                                            <label class="form-check-label" for="yes">Yes</label>
+                                          </div>
+                                          <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="computer_skills" id="no" value="No">
+                                            <label class="form-check-label" for="no">No</label>
+                                          </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="expertise">In which areas of IT you have knowledge or interest to learn about?</label>
+                                        <div class="form-check" id="expertise">
+                                            <input class="form-check-input" type="checkbox" value="" id="hardware">
+                                            <label class="form-check-label" for="hardware">
+                                                Hardware assembly and repair
+                                            </label>
+                                        </div>
+                                        <div class="form-check" id="expertise">
+                                            <input class="form-check-input" type="checkbox" value="" id="webDesign">
+                                            <label class="form-check-label" for="webDesign">
+                                                Website Design
+                                            </label>
+                                        </div>
+                                        <div class="form-check" id="expertise">
+                                            <input class="form-check-input" type="checkbox" value="" id="appDeveloping">
+                                            <label class="form-check-label" for="appDeveloping">
+                                                Application Developing
+                                            </label>
+                                        </div>
+                                        <div class="form-check" id="expertise">
+                                            <input class="form-check-input" type="checkbox" value="" id="game">
+                                            <label class="form-check-label" for="game">
+                                                Game design, multimedia applications
+                                            </label>
+                                        </div>
+                                        <div class="form-check" id="expertise">
+                                            <input class="form-check-input" type="checkbox" value="" id="other">
+                                            <label class="form-check-label" for="other">
+                                                Other areas of IT
+                                            </label>
+                                        </div>
+                                        
+                                    </div>
+                                </fieldset>
+                                
+                                <div class="d-flex justify-content-center">
+                                    <button type="submit" class="btn">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+             <!-- DARE TO CHANGE -->
+             <section id="register_want_info_section">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <h1 class='text-center ml-auto mr-auto'>More<span>Info</span></h1>
+                            <div id="getContact">
+                                <a href="contact.html" class="btn btn-dark btn-lg">Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                    <p>© 2018 ComIT. All rights reserved.</p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6" id = "icons">
+                    <a class="btn" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn" href=""><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
+ 

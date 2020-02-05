@@ -530,12 +530,114 @@ footer{
 
             &:hover{
                 font-size: 1.5rem;
-                border: 3px double $secondColor;
             }
         }
     }
 }
 
+
+// --------------------- REGISTER STYLES ---------------------
+#register_header{
+    .row{
+        margin: 0;
+    }
+    #register_header_d2{
+       @include header_row_2(url(/images/banner-registration.jpg));
+    }
+}
+
+#register_section{
+    @include darkBackground();
+    border-top: 5px solid white;
+    padding-bottom: 120px;
+
+    form{
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+
+        fieldset{
+            margin-bottom: 40px;
+
+            legend{
+                width: 60%;
+                background: $secondColor;
+                border-radius: 0.5em;
+                text-align: center;
+                padding: 10px 5px;
+                margin-bottom: 30px;
+            }
+        }
+        label{
+            font-size: 1.25rem;
+            padding-left: 10px;
+        }
+
+        #emailHelp{
+            color: white;
+            padding-left: 10px;
+        }
+
+        input[type="radio"]{
+            margin-left: 50px;
+        }
+
+        button{
+            width: 100%;
+            text-align: center;
+            background: $darkColor;
+            color: white;
+            font-size: 1.25rem;
+            text-transform: uppercase;
+            padding: 10px 10px;
+            border: 3px double white;
+
+            &:hover{
+                font-size: 1.5rem;
+            }
+        }
+
+        .form-check{
+            margin-left: 5%;
+        }
+    }
+}
+
+#register_want_info_section{
+    height: 40vh;
+    width: 100%;
+    
+    .col-12{
+        padding: 0;
+        h1{
+            @include headerInLightBackground();
+        }
+    
+        #getContact{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+            
+            a{
+                display: flex;
+                width: 40%;
+                margin-top: 5% auto 0 auto;
+                justify-content: center;
+                align-items: center;
+                padding: 20px 0;
+                text-transform: uppercase;
+            }
+    
+            a:hover{
+                font-size: 1.75rem;
+                background-color: white;
+                color: $primaryColor;
+                border: 5px double $secondColor;
+            }
+        }
+    }
+}
 
 
 @keyframes slide-left{
