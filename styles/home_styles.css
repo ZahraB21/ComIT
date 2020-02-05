@@ -374,7 +374,7 @@ footer .row #icons a i {
   min-width: 100%;
   width: 100%;
   height: 100vh;
-  background-image: url(/images/banner-faq.jpg);
+  background-image: url(/images/faq.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   display: -webkit-box;
@@ -396,6 +396,17 @@ footer .row #icons a i {
   text-transform: uppercase;
   -webkit-animation: change-color forwards 3s infinite;
           animation: change-color forwards 3s infinite;
+}
+
+#faq_header h1, #faq_header h2 {
+  background: rgba(46, 44, 44, 0.86);
+  padding: 5px;
+  border-left: 5px double white;
+  border-right: 5px double white;
+}
+
+#faq_header h1 {
+  padding: 10px;
 }
 
 #faq_section {
@@ -495,7 +506,7 @@ footer .row #icons a i {
   min-width: 100%;
   width: 100%;
   height: 100vh;
-  background-image: url(/images/banner-contact.jpg);
+  background-image: url(/images/contact.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   display: -webkit-box;
@@ -517,6 +528,13 @@ footer .row #icons a i {
   text-transform: uppercase;
   -webkit-animation: change-color forwards 3s infinite;
           animation: change-color forwards 3s infinite;
+}
+
+#contact_header h1, #contact_header h2 {
+  background: rgba(46, 44, 44, 0.86);
+  border-left: 15px double white;
+  border-right: 15px double white;
+  padding: 0 70px;
 }
 
 #contact_us_section {
@@ -567,7 +585,7 @@ footer .row #icons a i {
   min-width: 100%;
   width: 100%;
   height: 100vh;
-  background-image: url(/images/banner-registration.jpg);
+  background-image: url(/images/register.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   display: -webkit-box;
@@ -589,6 +607,17 @@ footer .row #icons a i {
   text-transform: uppercase;
   -webkit-animation: change-color forwards 3s infinite;
           animation: change-color forwards 3s infinite;
+}
+
+#register_header h1, #register_header h2 {
+  background: rgba(46, 44, 44, 0.86);
+  border-left: 15px double white;
+  border-right: 15px double white;
+  padding: 5px 25px;
+}
+
+#register_header h1 {
+  padding: 5px 20px;
 }
 
 #register_section {
@@ -798,16 +827,19 @@ footer .row #icons a i {
             justify-content: flex-end;
   }
   header #header_row_2 #header_div_2 #header_column h1 {
-    padding: 1.5% 3%;
+    font-size: 4.5rem;
+    padding: 0.5% 10px;
   }
   header #header_row_2 #header_div_2 #header_column #time {
-    width: 50%;
-    font-size: 2.5rem;
+    width: 65%;
+    font-size: 3.5rem;
+    padding: 0.5% 10px;
   }
   header #header_row_2 #header_div_2 #header_column #recode {
-    width: 50%;
-    font-size: 2.5rem;
-    margin: 0 auto 1% auto;
+    font-size: 3.5rem;
+    padding: 0.5% 10px;
+    width: 65%;
+    margin-bottom: 1%;
   }
   header #header_row_2 #header_div_2 #header_column .btn {
     width: 40%;
@@ -817,23 +849,37 @@ footer .row #icons a i {
   main #our_supporters h1 {
     font-size: 2.5rem;
   }
+  #faq_header_d2 h1, #faq_header_d2 h2 {
+    border-left: 15px double white;
+    border-right: 15px double white;
+  }
   #faq_header_d2 h1 {
     font-size: 4.5rem;
+    padding: 0.5% 50px;
   }
   #faq_header_d2 h2 {
     font-size: 2.5rem;
+    padding: 1.5%;
   }
   #contact_header_d2 h1 {
     font-size: 4.5rem;
+    padding: 0.5% 250px;
   }
   #contact_header_d2 h2 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
+    padding: 0.75% 250px;
+  }
+  #register_header_d2 h1, #register_header_d2 h2 {
+    border-left: 15px double white;
+    border-right: 15px double white;
   }
   #register_header_d2 h1 {
     font-size: 4.5rem;
+    padding: 0.5% 100px;
   }
   #register_header_d2 h2 {
     font-size: 2.5rem;
+    padding: 1.5%;
   }
 }
 

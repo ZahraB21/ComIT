@@ -411,7 +411,18 @@ footer{
         margin: 0;
     }
     #faq_header_d2{
-       @include header_row_2(url(/images/banner-faq.jpg));
+        @include header_row_2(url(/images/faq.jpg));
+    }
+
+    h1,h2{
+        background: rgba(46, 44, 44, 0.86);
+        padding: 5px;
+        border-left: 5px double white;
+        border-right: 5px double white;
+    }
+
+    h1{
+        padding: 10px;
     }
     
 }
@@ -494,8 +505,16 @@ footer{
         margin: 0;
     }
     #contact_header_d2{
-       @include header_row_2(url(/images/banner-contact.jpg));
+       @include header_row_2(url(/images/contact.jpg));
     }
+
+    h1,h2{
+        background: rgba(46, 44, 44, 0.86);
+        border-left: 15px double white;
+        border-right: 15px double white;
+        padding: 0 70px;
+    }
+
 }
 
 #contact_us_section{
@@ -542,7 +561,17 @@ footer{
         margin: 0;
     }
     #register_header_d2{
-       @include header_row_2(url(/images/banner-registration.jpg));
+       @include header_row_2(url(/images/register.jpg));
+    }
+
+    h1,h2{
+        background: rgba(46, 44, 44, 0.86);
+        border-left: 15px double white;
+        border-right: 15px double white;
+        padding: 5px 25px;
+    }
+    h1{
+        padding: 5px 20px;
     }
 }
 

@@ -32,18 +32,21 @@
             #header_div_2{
                 #header_column{    
                     h1{
-                        padding: 1.5% 3%;
+                        font-size: 4.5rem;
+                        padding: 0.5% 10px;
                     }
             
                     #time{
-                        width: 50%;
-                        font-size: 2.5rem;
+                        width: 65%;
+                        font-size: 3.5rem;
+                        padding: 0.5% 10px;
                     }
             
                     #recode{
-                        width: 50%;
-                        font-size: 2.5rem;
-                        margin: 0 auto 1% auto;
+                        font-size: 3.5rem;
+                        padding: 0.5% 10px;
+                        width: 65%;
+                        margin-bottom: 1%;
                     }
             
                     .btn{
@@ -66,32 +69,48 @@
 
     // ----------- FAQ PAGE STYLES ------------
     #faq_header_d2{
+        h1,h2{
+        border-left: 15px double white;
+        border-right: 15px double white;
+        
+        }
         h1{
             font-size: 4.5rem;
+            padding: 0.5% 50px;
         }
         h2{
             font-size: 2.5rem;
+            padding: 1.5%;
         }
     }
 
     // ----------- CONTACT PAGE STYLES ------------
     #contact_header_d2{
-        h1{
-            font-size: 4.5rem;
-        }
-        h2{
-            font-size: 2.5rem;
-        }
+            h1{
+                font-size: 4.5rem;
+                padding: 0.5% 250px;
+            }
+            h2{
+                font-size: 3.5rem;
+                padding: 0.75% 250px;
+            }
     }
 
     // ----------- REGISTER PAGE STYLES ------------
     #register_header_d2{
-        h1{
-            font-size: 4.5rem;
-        }
-        h2{
-            font-size: 2.5rem;
-        }
+        h1,h2{
+            border-left: 15px double white;
+            border-right: 15px double white;
+            
+            }
+            h1{
+                font-size: 4.5rem;
+                padding: 0.5% 100px;
+            }
+            h2{
+                font-size: 2.5rem;
+                padding: 1.5%;
+            }
     }
 }
 
