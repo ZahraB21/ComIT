@@ -11,8 +11,6 @@
 
 @mixin header_row_2($image){
     min-height: 100vh;
-    min-width: 100%;
-    width: 100%;
     height: 100vh;
 
     background-image: $image;
@@ -133,12 +131,11 @@ header{
 
         #header_div_2{
             padding: 0;
-            min-width: 100vw;
             min-height: 100vh;
-            width: 100vw;
             height: 100vh;
             
             background-image: url(/images/homePage.jpg);
+            overflow: hidden;
             background-repeat: no-repeat;
             background-size: cover;
             object-fit: scale-down;
@@ -456,9 +453,12 @@ footer{
         .collapse{
             width: 90%;
             margin-bottom: 10px;
+            margin-left: auto;
+            margin-right: auto;
             span{
             text-align: justify;
             font-size: 18px;
+            
             }
         }
     }

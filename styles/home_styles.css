@@ -86,11 +86,10 @@ header #header_row_2 {
 
 header #header_row_2 #header_div_2 {
   padding: 0;
-  min-width: 100vw;
   min-height: 100vh;
-  width: 100vw;
   height: 100vh;
   background-image: url(/images/homePage.jpg);
+  overflow: hidden;
   background-repeat: no-repeat;
   background-size: cover;
   -o-object-fit: scale-down;
@@ -372,8 +371,6 @@ footer .row #icons a i {
 
 #faq_header #faq_header_d2 {
   min-height: 100vh;
-  min-width: 100%;
-  width: 100%;
   height: 100vh;
   background-image: url(/images/faq.jpg);
   background-repeat: no-repeat;
@@ -441,6 +438,8 @@ footer .row #icons a i {
 #faq_section .row .collapse {
   width: 90%;
   margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #faq_section .row .collapse span {
@@ -504,8 +503,6 @@ footer .row #icons a i {
 
 #contact_header #contact_header_d2 {
   min-height: 100vh;
-  min-width: 100%;
-  width: 100%;
   height: 100vh;
   background-image: url(/images/contact.jpg);
   background-repeat: no-repeat;
@@ -583,8 +580,6 @@ footer .row #icons a i {
 
 #register_header #register_header_d2 {
   min-height: 100vh;
-  min-width: 100%;
-  width: 100%;
   height: 100vh;
   background-image: url(/images/register.jpg);
   background-repeat: no-repeat;
@@ -731,54 +726,6 @@ footer .row #icons a i {
   background-color: white;
   color: #23272b;
   border: 5px double #af6c1e;
-}
-
-@-webkit-keyframes slide-left {
-  from {
-    -webkit-transform: scaleX(0);
-            transform: scaleX(0);
-  }
-  to {
-    -webkit-transform: scaleX(1.17);
-            transform: scaleX(1.17);
-    color: #003bee;
-  }
-}
-
-@keyframes slide-left {
-  from {
-    -webkit-transform: scaleX(0);
-            transform: scaleX(0);
-  }
-  to {
-    -webkit-transform: scaleX(1.17);
-            transform: scaleX(1.17);
-    color: #003bee;
-  }
-}
-
-@-webkit-keyframes slide-right {
-  from {
-    -webkit-transform: scaleX(0);
-            transform: scaleX(0);
-  }
-  to {
-    -webkit-transform: scaleX(1.17);
-            transform: scaleX(1.17);
-    color: #003bee;
-  }
-}
-
-@keyframes slide-right {
-  from {
-    -webkit-transform: scaleX(0);
-            transform: scaleX(0);
-  }
-  to {
-    -webkit-transform: scaleX(1.17);
-            transform: scaleX(1.17);
-    color: #003bee;
-  }
 }
 
 @-webkit-keyframes change-color {
